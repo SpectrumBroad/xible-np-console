@@ -1,6 +1,6 @@
 {
   "name": "xible-np-console",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Nodepack for XIBLE to call javascripts' console.* methods.",
   "license": "MIT",
   "repository": {
@@ -15,11 +15,5 @@
     "xible",
     "console",
     "nodepack"
-  ],
-  "scripts": {
-    "prepublishOnly": "npm shrinkwrap --only=prod"
-  },
-  "dependencies": {
-    "ace-builds": "*"
-  }
+  ]
 }
