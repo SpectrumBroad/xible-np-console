@@ -1,0 +1,25 @@
+{
+  "name": "xible-np-console",
+  "version": "0.1.0",
+  "description": "Nodepack for XIBLE to call javascripts' console.* methods.",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/spectrumbroad/xible-np-console"
+  },
+  "bugs": {
+    "url": "https://github.com/spectrumbroad/xible-np-console/issues",
+    "email": "bugs@xible.io"
+  },
+  "keywords": [
+    "xible",
+    "console",
+    "nodepack"
+  ],
+  "scripts": {
+    "prepublishOnly": "npm shrinkwrap --only=prod"
+  },
+  "dependencies": {
+    "ace-builds": "*"
+  }
+}
