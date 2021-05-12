@@ -17,21 +17,14 @@ function log(str, NODE) {
 
 module.exports = (NODE) => {
   const triggerIn = NODE.getInputByName('trigger');
-  const valueIn = NODE.getInputByName('value');
 
   const doneOut = NODE.getOutputByName('done');
 
   triggerIn.on('trigger', async (conn, state) => {
-    if (!valueIn.isConnected()) {
-      log(NODE.data.value || '', NODE);
-      doneOut.trigger(state);
-      return;
-    }
-
-    const strs = await valueIn.getValues(state)
-    strs.forEach((str) => {
-      log(str, NODE);
-    });
+    (await NODE.getData('data', state))
+      .forEach((data) => {
+        log(data, NODE);
+      });
 
     doneOut.trigger(state);
   });

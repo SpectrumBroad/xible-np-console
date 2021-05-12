@@ -6,13 +6,25 @@
     "trigger": {
       "type": "trigger"
     },
-    "value": {
+    "data": {
       "type": "object"
     }
   },
   "outputs": {
     "done": {
       "type": "trigger"
+    }
+  },
+  "dataStructure": {
+    "data": {
+      "label": "message",
+      "type": "text",
+      "required": true,
+      "input": {
+        "name": "data",
+        "replaces": true
+      },
+      "description": "Prints to stdout with newline."
     }
   }
 }
