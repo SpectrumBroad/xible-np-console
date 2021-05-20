@@ -1,6 +1,6 @@
 {
   "name": "xible-np-console",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Nodepack for XIBLE to call javascripts' console.* methods.",
   "engines": {
     "xible": "^0.24.0"

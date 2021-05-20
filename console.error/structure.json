@@ -20,7 +20,6 @@
       "label": "message",
       "type": "text",
       "required": true,
-      "defaultValue": "blaat",
       "input": {
         "name": "data",
         "replaces": true
